@@ -1,0 +1,15 @@
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+def home():
+    return {"status": "CRM работает"}
+
+@app.get("/dashboard")
+def dashboard():
+    return {
+        "plan": 100000,
+        "fact": 82000,
+        "status": "OK"
+    }

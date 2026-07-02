@@ -1,0 +1,14 @@
+@echo off
+
+echo ==========================
+echo  ЗАПУСК CRM SYSTEM
+echo ==========================
+
+start cmd /k "uvicorn main:app --reload"
+start cmd /k "python bot.py"
+
+echo ==========================
+echo  СИСТЕМА ЗАПУЩЕНА
+echo ==========================
+
+pause
