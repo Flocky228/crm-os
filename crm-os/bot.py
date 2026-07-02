@@ -9,7 +9,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = InlineKeyboardMarkup([
         [InlineKeyboardButton(
             "📊 Открыть CRM",
-            WebAppInfo(url="https://crm-os.railway.internal.railway.app/dashboard")
+            WebAppInfo(url="crm-os-production.up.railway.app/dashboard")
         )]
     ])
 
